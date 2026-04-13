@@ -21,7 +21,12 @@ node tests/hooks/hooks.test.js
 ## Architecture
 
 The project is organized into several core components:
-- **contexts/architecture/** - Project architecture guidelines. Always follow these patterns when generating code for NestJS or Next.js.
+- **contexts/architecture/** - Project architecture guidelines. 
+  - **IMPORTANT**: Always follow `./contexts/architecture/nx_monorepo_architecture.md` for workspace structure.
+  - Follow NestJS/Next.js patterns only within their respective Nx libraries/apps.
+- **contexts/architecture/nx_monorepo_architecture.md**: Core guidelines for NX workspace, RBAC enforcement, and app/lib separation (Strictly follow for all generation tasks).
+- **contexts/architecture/database_architecture.md**: Prisma schema rules and DB access patterns.
+- **contexts/architecture/rbac_policy.md**: Strict role-based access control definitions for Admin/User.
 - **agents/** - Specialized subagents for delegation (planner, code-reviewer, tdd-guide, etc.)
 - **skills/** - Workflow definitions and domain knowledge (coding standards, patterns, testing)
 - **commands/** - Slash commands invoked by users (/tdd, /plan, /e2e, etc.)
