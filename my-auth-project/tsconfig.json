@@ -23,6 +23,21 @@
     },
     {
       "path": "./apps/api"
+    },
+    {
+      "path": "./libs/shared-types"
+    },
+    {
+      "path": "./libs/auth"
+    },
+    {
+      "path": "./libs/database"
+    },
+    {
+      "path": "./libs/utils"
+    },
+    {
+      "path": "./libs/config"
     }
   ]
 }
