@@ -133,6 +133,7 @@ src/
 **Rules:**
 - MUST NOT contain business logic
 - MUST call Application layer only
+- MUST integrate with Better Auth session validation logic to populate Request User.
 
 ---
 
